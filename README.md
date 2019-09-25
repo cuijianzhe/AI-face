@@ -1,5 +1,6 @@
 # AI-face
 这是一个基于python换脸的代码
+[我的文章链接](https://www.cjzshilong.cn/articles/2019/08/31/1567234676723.html)
 
 # AI	换脸实现
 > **科普：我们人眼看到连续画面的帧数为24 帧，大约 0.04秒，低于0.04就会卡成ppt。电影胶片是24帧 也就是每秒钟可以看到24张图像 低于这个数值就会感觉画面不流畅 所以以24帧为界限**
@@ -361,4 +362,4 @@ if __name__ == '__main__':
 
 ![image.png](https://img.hacpai.com/file/2019/09/image-79037cc6.png)
 
-[链接](https://hacpai.com/article/1567310659161)
+
