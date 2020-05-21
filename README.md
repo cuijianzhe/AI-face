@@ -46,8 +46,8 @@ import base64
 def find_face(imgfile):
     print("finding")
     http_url = 'https://api-cn.faceplusplus.com/facepp/v3/detect'
-    data = {"api_key": 'nFnE8LQ32lteRvt99pA-kaMGCG9PRkGI',
-            "api_secret": '0RD-G7z9LNEmd4WDdd7PJSmq7vQaIuTs', "image_file": imgfile, "return_landmark": 1}
+    data = {"api_key": 'nFnE8LQxxxxxPRkGI',
+            "api_secret": '0RD-G7z9xxxxxxxxxaIuTs', "image_file": imgfile, "return_landmark": 1}
     files = {"image_file": open(imgfile, "rb")}
     response = requests.post(http_url, data=data, files=files)
     req_con = response.content.decode('utf-8')   #decode将已编码的json字符串解码成python对象
@@ -75,7 +75,7 @@ def merge_face(img_url_1,img_url_2,img_url_3,number):
     f2 = open(img_url_2, 'rb')
     f2_64 = base64.b64encode(f2.read())
     f2.close()
-    data = {"api_key": 'nFnE8LQ32lteRvt99pA-kaMGCG9PRkGI', "api_secret": '0RD-G7z9LNEmd4WDdd7PJSmq7vQaIuTs',
+    data = {"api_key": 'nFnE8xxCG9PRkGI', "api_secret": '0RD-G7z9xxxxxIuTs',
             "template_base64": f1_64, "template_rectangle": rectangle1,
             "merge_base64": f2_64, "merge_rectangle": rectangle2, "merge_rate": number}
     response = requests.post(url_add, data=data)
@@ -195,8 +195,8 @@ from PIL import Image, ImageFont, ImageDraw
 def find_face(imgfile):
     print("finding")
     http_url = 'https://api-cn.faceplusplus.com/facepp/v3/detect'
-    data = {"api_key": 'nFnE8LQ32lteRvt99pA-kaMGCG9PRkGI',
-            "api_secret": '0RD-G7z9LNEmd4WDdd7PJSmq7vQaIuTs', "image_url": imgfile, "return_landmark": 1}
+    data = {"api_key": 'nFnExxxxRkGI',
+            "api_secret": '0RD-G7zxxxxQaIuTs', "image_url": imgfile, "return_landmark": 1}
     files = {"image_file": open(imgfile, "rb")}
     response = requests.post(http_url, data=data, files=files)
     req_con = response.content.decode('utf-8')
@@ -221,7 +221,7 @@ def merge_face(image_url_1,image_url_2,image_url_3,number):
     f2 = open(image_url_2, 'rb')
     f2_64 = base64.b64encode(f2.read())
     f2.close()
-    data = {"api_key": 'nFnE8LQ32lteRvt99pA-kaMGCG9PRkGI', "api_secret": '0RD-G7z9LNEmd4WDdd7PJSmq7vQaIuTs',
+    data = {"api_key": 'nFnE8LxxxxkGI', "api_secret": '0RD-xxxxxQaIuTs',
             "template_base64": f1_64, "template_rectangle": rectangle1,
             "merge_base64": f2_64, "merge_rectangle": rectangle2, "merge_rate": number}
     response = requests.post(url_add, data=data)
@@ -289,8 +289,8 @@ def video_add_mp3(file_name, mp3_file):
 def find_face(imgfile):
     print("finding")
     http_url = 'https://api-cn.faceplusplus.com/facepp/v3/detect'
-    data = {"api_key": 'nFnE8LQ32lteRvt99pA-kaMGCG9PRkGI',
-            "api_secret": '0RD-G7z9LNEmd4WDdd7PJSmq7vQaIuTs', "image_url": imgfile, "return_landmark": 1}
+    data = {"api_key": 'nFnE8LxxxxRkGI',
+            "api_secret": '0RD-GxxxxxQaIuTs', "image_url": imgfile, "return_landmark": 1}
     files = {"image_file": open(imgfile, "rb")}
     response = requests.post(http_url, data=data, files=files)
     req_con = response.content.decode('utf-8')
@@ -315,7 +315,7 @@ def merge_face(image_url_1,image_url_2,image_url_3,number):
     f2 = open(image_url_2, 'rb')
     f2_64 = base64.b64encode(f2.read())
     f2.close()
-    data = {"api_key": 'nFnE8LQ32lteRvt99pA-kaMGCG9PRkGI', "api_secret": '0RD-G7z9LNEmd4WDdd7PJSmq7vQaIuTs',
+    data = {"api_key": 'nFnE8LxxxCG9xGI', "api_secret": '0RD-G7zxxqxxxxs',
             "template_base64": f1_64, "template_rectangle": rectangle1,
             "merge_base64": f2_64, "merge_rectangle": rectangle2, "merge_rate": number}
     response = requests.post(url_add, data=data)
